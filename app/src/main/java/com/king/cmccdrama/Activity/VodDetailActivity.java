@@ -59,6 +59,7 @@ public class VodDetailActivity extends BaseActivity {
         //migu.loginMiGu();
     }
 
+
     @Override
     protected void onPause() {
         super.onPause();
