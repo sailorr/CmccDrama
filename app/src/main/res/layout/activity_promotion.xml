@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/backgroud"
+    tools:context=".Activity.PromotionActivity">
+
+    <LinearLayout
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="80dp"
+        android:orientation="vertical">
+
+        <!-- 活动预告 -->
+        <ImageView
+            android:id="@+id/promo_layout_new"
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:focusable="true"
+            android:background="@drawable/promotion_btn_1"
+            android:scaleType="centerCrop"/>
+
+        <!-- 活动公告 -->
+        <ImageView
+            android:id="@+id/promo_layout_notice"
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_marginTop="13dp"
+            android:focusable="true"
+            android:background="@drawable/promotion_btn_2"
+            android:scaleType="centerCrop"/>
+
+        <!-- 历史活动 -->
+        <ImageView
+            android:id="@+id/promo_layout_history"
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_marginTop="13dp"
+            android:focusable="true"
+            android:background="@drawable/promotion_btn_3"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="13dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/promo_image1"
+                android:layout_width="487dp"
+                android:layout_height="396dp"
+                android:background="@drawable/temp_main_hb02"
+                android:scaleType="centerCrop"/>
+            <!-- android:focusable="true" -->
+
+            <ImageView
+                android:id="@+id/promo_image2"
+                android:layout_width="305dp"
+                android:layout_height="396dp"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/temp_main_hb01"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/promo_image3"
+                android:layout_width="396dp"
+                android:layout_height="191dp"
+                android:background="@drawable/temp_category_img5"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/promo_image4"
+                android:layout_width="396dp"
+                android:layout_height="191dp"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/temp_category_img6"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

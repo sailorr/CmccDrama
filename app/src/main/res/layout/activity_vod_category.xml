@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:orientation="vertical"
+    tools:context=".Activity.VodCategoryActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="68dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/category_search"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"/>
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="搜索"
+            android:textColor="#F1F1F1"
+            android:textSize="19sp"
+            android:visibility="invisible"/>
+        -->
+
+        <TextView
+            android:id="@+id/category_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:text="京剧"
+            android:textColor="#F1F1F1"
+            android:textSize="24sp"
+            android:focusable="true"
+            android:nextFocusLeft="@id/category_text_6"/>
+
+        <TextView
+            android:id="@+id/category_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83dp"
+            android:text="晋剧"
+            android:textColor="#F1F1F1"
+            android:textSize="24sp"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/category_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83dp"
+            android:text="越调"
+            android:textColor="#F1F1F1"
+            android:textSize="24sp"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/category_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83dp"
+            android:text="粤剧"
+            android:textColor="#F1F1F1"
+            android:textSize="24sp"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/category_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83dp"
+            android:text="湘剧"
+            android:textColor="#F1F1F1"
+            android:textSize="24sp"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/category_text_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83dp"
+            android:text="相声"
+            android:textColor="#F1F1F1"
+            android:textSize="24sp"
+            android:focusable="true"
+            android:nextFocusRight="@id/category_text_1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/imageVideo_1"
+            android:layout_width="553dp"
+            android:layout_height="248dp"
+            android:focusable="true"
+            android:background="@drawable/temp_category_img1"
+            android:scaleType="centerCrop"
+            android:nextFocusLeft="@id/imageVideo_6"/>
+
+        <ImageView
+            android:id="@+id/imageVideo_2"
+            android:layout_width="553dp"
+            android:layout_height="248dp"
+            android:layout_marginLeft="13dp"
+            android:focusable="true"
+            android:background="@drawable/temp_category_img2"
+            android:scaleType="centerCrop"
+            android:nextFocusRight="@id/imageVideo_3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:id="@+id/imageVideo_3"
+            android:layout_width="270dp"
+            android:layout_height="179dp"
+            android:focusable="true"
+            android:background="@drawable/temp_category_img3"
+            android:scaleType="centerCrop"
+            android:nextFocusLeft="@id/imageVideo_2"/>
+
+        <ImageView
+            android:id="@+id/imageVideo_4"
+            android:layout_width="270dp"
+            android:layout_height="179dp"
+            android:layout_marginLeft="13dp"
+            android:focusable="true"
+            android:background="@drawable/temp_category_img4"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageVideo_5"
+            android:layout_width="270dp"
+            android:layout_height="179dp"
+            android:layout_marginLeft="13dp"
+            android:focusable="true"
+            android:background="@drawable/temp_category_img5"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageVideo_6"
+            android:layout_width="270dp"
+            android:layout_height="179dp"
+            android:layout_marginLeft="13dp"
+            android:focusable="true"
+            android:background="@drawable/temp_category_img6"
+            android:scaleType="centerCrop"
+            android:nextFocusRight="@id/imageVideo_1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/category_button_up"
+            android:layout_width="107dp"
+            android:layout_height="40dp"
+            android:text="上一页"
+            android:textColor="#F1F1F1"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:focusable="true"
+            android:background="@drawable/category_btn_bg"/>
+
+        <Button
+            android:id="@+id/category_button_down"
+            android:layout_width="107dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="下一页"
+            android:textColor="#F1F1F1"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:focusable="true"
+            android:background="@drawable/category_btn_bg"/>
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="共 1 页 共 6 部节目"
+            android:textColor="#F1F1F1"
+            android:textSize="19sp"
+            android:gravity="center"/>
+        -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共"
+                android:textSize="19sp"
+                android:textColor="#f1f1f1"/>
+            <TextView
+                android:id="@+id/category_page_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="19sp"
+                android:textColor="#fbdb72"
+                android:layout_marginLeft="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="页"
+                android:textSize="19sp"
+                android:textColor="#f1f1f1"
+                android:layout_marginLeft="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共"
+                android:textSize="19sp"
+                android:textColor="#f1f1f1"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/category_video_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="19sp"
+                android:textColor="#fbdb72"
+                android:layout_marginLeft="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="部节目"
+                android:textSize="19sp"
+                android:textColor="#f1f1f1"
+                android:layout_marginLeft="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前第"
+                android:textSize="19sp"
+                android:textColor="#f1f1f1"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/category_page_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="19sp"
+                android:textColor="#fbdb72"
+                android:layout_marginLeft="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="页"
+                android:textSize="19sp"
+                android:textColor="#f1f1f1"
+                android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 播放器 -->
+    <color name="transParent">#00000000</color>
+    <color name="mediaController_bg_pressed">#ff53c1bd</color>
+    <!-- 播放器 -->
+</resources>
